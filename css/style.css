@@ -1,7 +1,8 @@
 nav{
-    width: 80rem;
-    height: 4.375rem;
+    /* width: 80rem;
+    height: 4.375rem; */
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     color: #29393D;
@@ -48,8 +49,9 @@ nav p{
 
 header ul{
     display: flex;
-    width: 67.28844rem;
-    height: 1.6875rem;
+    flex-wrap: wrap;
+    /* width: 67.28844rem;
+    height: 1.6875rem; */
     justify-content: center;
     align-items: center;
     gap: 10rem;
@@ -83,11 +85,15 @@ header ul a:hover{
 
 .sobre div{
     display: flex;
-    padding: 5rem 6.125rem 4.125rem 29.6875rem;
+    width: 100%;
+    padding: 5rem 6.125rem;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
     gap: 2.9375rem;
+    font-size: 1.3rem;
+    overflow: scroll;
+    /* border: 2px solid red; */
 }
 
 .sobre div h2{
@@ -97,7 +103,7 @@ header ul a:hover{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    width: 6.75rem;
+    /* width: 6.75rem; */
     height: 3.3125rem;
 }
 .sobre div p{
@@ -107,28 +113,26 @@ header ul a:hover{
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 190%; /* 2.375rem */
-    letter-spacing: 0.3125rem;
-    width: 44.1875rem;
+    line-height: 190%;
+    letter-spacing: 0.3125rem;  
     height: 15.875rem;
 }
 
-
 .time img{
-    width: 26.25rem;
-    height: 30.6875rem;
     border-radius: 3.125rem;
+    margin: 1rem 0;
+    object-fit: cover;
+    object-position: center;
 }
 
 .time p{
-    width: 35.6875rem;
     color: #29393D;
     text-align: justify;
     font-family: 'Poppins', sans-serif;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 160%; /* 1.8rem */
+    line-height: 160%;
     letter-spacing: 0.19125rem;
 }
 .time span{
@@ -160,6 +164,7 @@ header ul a:hover{
 
 .prf-text{
     margin-right: 2rem;
+    padding: 3rem 2rem;
 }
 
 .prf-text2{
@@ -252,8 +257,10 @@ form textarea{
     display: flex;
     justify-content: space-between;
     padding: 2rem;
+    flex-wrap: wrap;
     align-items: center;
 }
+
 .bottom input{
     border: 1px solid #29393D;
     border-radius: 8px;
